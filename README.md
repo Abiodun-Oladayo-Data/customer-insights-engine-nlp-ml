@@ -74,75 +74,106 @@ Gradio
 
 
 ## Project Workflow
-1. Data Cleaning
-Removed missing values
-Converted data types
-Cleaned review text
-Removed punctuation and stopwords
-Applied lemmatization
-2. Exploratory Data Analysis
-Product review analysis
-Category-level analysis
-Customer engagement trends
-Sentiment distribution analysis
-3. Feature Engineering
+### 1. Data Preparation
 
-Created custom features including:
+- Loaded and inspected the Amazon reviews dataset
+- Handled missing values
+- Removed duplicates
+- Converted data types where necessary
+- Applied lemmatization
 
-Review Length
-Sentiment Polarity
-Price Drop Percentage
-Product Categories
-4. NLP Processing
+### 2. Exploratory Data Analysis (EDA)
 
-Implemented:
+- Analyzed rating distributions
+- Examined sentiment trends
+- Identified product category performance
+- Visualized customer engagement patterns
+  
+### 3. Feature Engineering
 
-Text Cleaning
-Tokenization
-Lemmatization
-TF-IDF Vectorization
-5. Sentiment Classification
+Created additional features including:
+
+- Review length
+- Sentiment polarity
+- Price discount percentage
+- Encoded product categories
+
+### 4. NLP Processing
+
+- Text cleaning
+- Tokenization
+- Stopword removal
+- Lemmatization
+- TF-IDF vectorization
+
+### 5. Sentiment Classification
 
 Built and evaluated:
 
-Logistic Regression
-Decision Tree
-Random Forest
+- Logistic Regression
+- Decision Tree
+- Random Forest
 
-Metrics:
+Evaluation metrics included:
 
-Accuracy
-Precision
-Recall
-F1 Score
-Confusion Matrix
-6. Rating Prediction
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
 
-Built regression models to predict product ratings:
+### 6. Rating Prediction
 
-Linear Regression
-Ridge Regression
-Lasso Regression
+Developed regression models to predict customer ratings:
 
-Metrics:
+- Linear Regression
+- Ridge Regression
+- Lasso Regression
 
-MAE
-MSE
-RMSE
-R²
-7. Deep Learning Models
+Evaluation metrics included:
+
+- MAE
+- MSE
+- RMSE
+- R² Score
+
+### 7. Deep Learning Models
 
 Implemented:
 
-LSTM Network
-GRU Network
+- LSTM Network
+- GRU Network
 
-Used for sentiment prediction and comparison with traditional machine learning approaches.
+to compare performance against traditional machine learning approaches.
 
-8. Text Summarization
+### 8. Review Summarization
 
-Implemented a TextRank-inspired extractive summarization technique to generate concise summaries from customer reviews.
+Implemented an extractive text summarization solution to automatically generate concise summaries of lengthy customer reviews.
 
-9. Interactive Application
+### 9. Interactive Application
 
-Developed a Gradio-based interface that accepts multiple customer reviews and automatically generates a summarized output.
+Developed a Gradio-based user interface that allows users to submit reviews and receive automatically generated summaries.
+
+## Business Impact
+
+This solution enables organizations to:
+
+- Monitor customer sentiment at scale
+- Identify recurring customer complaints
+- Predict customer satisfaction levels
+- Summarize large volumes of feedback
+- Support product improvement and marketing decisions
+
+## Future Improvements
+
+- Incorporate transformer-based models such as BERT
+- Address class imbalance using SMOTE
+- Deploy the solution to a cloud environment
+- Build a real-time analytics dashboard
+- Integrate external review sources for broader analysis
+
+## Author
+
+Abiodun Oladayo
+
+Data Analytics | Machine Learning | Artificial Intelligence
